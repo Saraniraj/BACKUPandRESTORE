@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Support HR")>
+<Assembly: AssemblyTitle("BACKUP and RESTORE")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("ARME")>
-<Assembly: AssemblyProduct("Support HR")>
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2018")>
+<Assembly: AssemblyCompany("KRK")>
+<Assembly: AssemblyProduct("BACKUP and RESTORE")>
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2022")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
