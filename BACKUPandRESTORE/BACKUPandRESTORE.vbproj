@@ -85,6 +85,12 @@
     <Compile Include="Code Generate\FrmCodeGenerate.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_DALGenerate.Designer.vb">
+      <DependentUpon>Frm_DALGenerate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_DALGenerate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmRestor.Designer.vb">
       <DependentUpon>FrmRestor.vb</DependentUpon>
     </Compile>
@@ -151,6 +157,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Code Generate\FrmCodeGenerate.resx">
       <DependentUpon>FrmCodeGenerate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DALGenerate.resx">
+      <DependentUpon>Frm_DALGenerate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRestor.resx">
       <DependentUpon>FrmRestor.vb</DependentUpon>
