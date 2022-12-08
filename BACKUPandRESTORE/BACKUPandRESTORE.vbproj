@@ -79,6 +79,12 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="ClsConnections.vb" />
+    <Compile Include="Code Generate\FrmCodeGenerate.designer.vb">
+      <DependentUpon>FrmCodeGenerate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Code Generate\FrmCodeGenerate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmRestor.Designer.vb">
       <DependentUpon>FrmRestor.vb</DependentUpon>
     </Compile>
@@ -103,6 +109,17 @@
     <Compile Include="MainFrm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Messagebox\FormMessageBox.Designer.vb">
+      <DependentUpon>FormMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messagebox\FormMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messagebox\RJMessageBox.vb" />
+    <Compile Include="Modules\modCommonFunction.vb" />
+    <Compile Include="Modules\modDBConnection.vb" />
+    <Compile Include="Modules\modFormResize.vb" />
+    <Compile Include="Modules\modVariables.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -118,8 +135,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Sample\frmSample1.designer.vb">
+      <DependentUpon>frmSample1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\frmSample1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\frmSampleReport_DgvAzure.designer.vb">
+      <DependentUpon>frmSampleReport_DgvAzure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\frmSampleReport_DgvAzure.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Code Generate\FrmCodeGenerate.resx">
+      <DependentUpon>FrmCodeGenerate.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRestor.resx">
       <DependentUpon>FrmRestor.vb</DependentUpon>
     </EmbeddedResource>
@@ -132,11 +164,20 @@
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Messagebox\FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\frmSample1.resx">
+      <DependentUpon>frmSample1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\frmSampleReport_DgvAzure.resx">
+      <DependentUpon>frmSampleReport_DgvAzure.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +195,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icons8-Windows-8-Business-Online-Support.ico" />
+    <Content Include="Images\chat.png" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\exclamation.png" />
+    <Content Include="Images\information.png" />
+    <Content Include="Images\question.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
