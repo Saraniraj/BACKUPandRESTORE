@@ -105,7 +105,7 @@ Public Class Frm_DALGenerate
         Me.Cursor = Cursors.Default
 
     End Sub
-    Sub GET_DB()
+    Sub GET_TableName()
 
         Me.Cursor = Cursors.WaitCursor
 
